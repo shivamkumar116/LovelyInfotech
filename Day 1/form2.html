@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Change background color</title>
+  </head>
+  <body>
+    <a href="index.html">Assignment 1</a>
+
+    <script type="text/javascript">
+      var colors = [
+        "blue",
+        "green",
+        "yellow",
+        "black",
+        "cyan",
+        "magenta",
+        "pink",
+        "forestgreen",
+        "dodgerblue",
+        "purple"
+      ];
+      for (let i = 0; i < colors.length; i++) {
+        setTimeout(() => {
+          document.body.style.background = colors[i];
+        }, i * 1000);
+      }
+    </script>
+  </body>
+</html>

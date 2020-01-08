@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Web Login</title>
+  </head>
+  <body>
+    <section>
+      <h2>Login</h2>
+      <p>Please provide below details to log into the system</p>
+    </section>
+
+    <form>
+      <!-- <label>Username</label>
+      <input type="text" id="Username" /> -->
+      <label>Password</label>
+      <input type="password" id="password" />
+      <input
+        type="button"
+        id="btnSubmit"
+        value="Submit"
+        onclick="changeText()"
+      />
+    </form>
+    <section style="margin-top:30px;">
+      <a href="form2.html">Assignment 2</a>
+    </section>
+    <script type="text/javascript">
+      function changeText() {
+        document.getElementById("password").setAttribute("type", "text");
+      }
+    </script>
+  </body>
+</html>
