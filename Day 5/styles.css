@@ -1,0 +1,49 @@
+body {
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+}
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  text-decoration: none;
+}
+small a {
+  display: block;
+  color: #666666;
+}
+
+div {
+  display: block;
+}
+
+h5,
+h6 {
+  text-transform: uppercase;
+}
+figure {
+  margin: 0 10% 0 0;
+  width: 90px;
+  height: 90px;
+}
+
+img {
+  height: auto;
+  width: 100%;
+  border-style: none;
+  vertical-align: middle;
+}
+.property-city small a {
+  display: inline;
+  color: #5094e7;
+  position: relative;
+  padding-left: 5px;
+}
+
+.site-footer {
+  padding-top: 40px;
+  background: #2b365b;
+}
