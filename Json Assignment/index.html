@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Json Assignment</title>
+  </head>
+  <body>
+    <h1>Student Grade Card from the Json</h1>
+    <div id="studentData"></div>
+  </body>
+  <script>
+    var data = {
+      marks: [
+        {
+          Subject: "Search engine Optimization",
+          Grade: "A+"
+        },
+        {
+          Subject: "Data Analytics Using R",
+          Grade: "A"
+        },
+        {
+          Subject: "Seminar on Summer Training",
+          Grade: "B"
+        },
+        {
+          Subject: "Machine learning",
+          Grade: "A+"
+        },
+        {
+          Subject: "Data Visualization",
+          Grade: "A+"
+        },
+        {
+          Subject: "Agile Software development",
+          Grade: "A+"
+        }
+      ]
+    };
+    var h = "<table border='1'>";
+
+    h += "<tr><td>Subject</td><td>Grade</td></tr>";
+    for (i = 0; i < data.marks.length; i++) {
+      h += "<tr>";
+      h += "<td> " + data.marks[i]["Subject"] + "</td>";
+      h += "<td> " + data.marks[i]["Grade"] + "</td>";
+      h += "</tr>";
+    }
+
+    h = h + "</table >";
+    document.getElementById("studentData").innerHTML = h;
+  </script>
+</html>
